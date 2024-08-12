@@ -93,7 +93,6 @@ class AdvancedDetailsWindow(QWidget):
             file_name = f"{sanitized_title}.zip"
             downloads_path = os.path.join(os.path.expanduser("~"), "Downloads", file_name)
 
-            # Start downloading the zip file
             self.start_download(zip_url, downloads_path)
         else:
             QMessageBox.warning(self, "Download Error", "Invalid URL")
